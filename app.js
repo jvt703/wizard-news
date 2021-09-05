@@ -6,7 +6,7 @@ const volleyball = require('volleyball')
 
 app.use(volleyball)
 
-const PORT = 3000;
+const { PORT = 1337 } = process.env;
 
 app.use(morgan('dev'))
 app.use(express.static('public'))
